@@ -141,6 +141,20 @@ body {
   line-height: 26px;
   padding-bottom: 50px;
 }
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
 .flexsection {
   padding-top: 20px;
   width: 100%;
@@ -184,11 +198,19 @@ body {
 .container nav {
   width: 100%;
   margin-bottom: 20px;
+  background: #ff0550;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Raleway';
+}
+.container nav a {
+  padding-left: 40px;
 }
 .container .f-name {
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 5px;
+  color: #54AFE4;
 }
 .container .first-name {
   font-weight: 700;
@@ -229,7 +251,7 @@ body {
 }
 .container .section__title {
   letter-spacing: 2px;
-  color: #54AFE4;
+  color: #ff0550;
   font-weight: bold;
   margin-bottom: 10px;
   text-transform: uppercase;

@@ -64,11 +64,15 @@ html, body {
 	line-height: 26px;
 	padding-bottom: 50px;
   }
+
+  @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
  
 // My Variables
 @skybluecolor: #54AFE4;
 @lightgrey: #999;
-
+@navcolor: #ff0550;
+@Raleway: 'Raleway';
+@Roboto: 'Robot';
 // My Mixins
 
 .flexsection {
@@ -122,12 +126,23 @@ html, body {
 	nav {
 		width: 100%;
 		margin-bottom: 20px;
+		background: @navcolor;
+		text-align: center;
+		padding: 10px;
+		font-family: @Raleway;
+	}
+
+	nav a {
+		padding-left: 40px;
+		
+		
 	}
 
   .f-name {
     font-size: 40px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+	margin-bottom: 5px; 
+	color: @skybluecolor;
   }
   
   .first-name {
@@ -174,7 +189,7 @@ html, body {
   
   .section__title {
     letter-spacing: 2px;
-    color: @skybluecolor;
+    color: @navcolor;
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
