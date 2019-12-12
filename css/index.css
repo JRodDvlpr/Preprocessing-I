@@ -1,1 +1,292 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  background: #eee;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 50px;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+.flexsection {
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.marginsec {
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+.flex-column {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container {
+  max-width: 800px;
+  background: #fff;
+  margin: 0px auto 0px;
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;
+  padding: 40px;
+  margin-top: 50px;
+}
+@media (max-width: 500px) {
+  .container .container {
+    max-width: 100%;
+    text-align: center;
+  }
+  .container .section {
+    width: 100%;
+    text-align: center;
+  }
+  .container .section .section__list-item .right {
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.container .header {
+  margin-bottom: 30px;
+}
+.container nav {
+  width: 100%;
+  margin-bottom: 20px;
+  background: #ff0550;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Raleway';
+}
+.container nav a {
+  padding-left: 40px;
+}
+.container .f-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #54AFE4;
+}
+.container .first-name {
+  font-weight: 700;
+}
+.container .last-name {
+  font-weight: 300;
+}
+.container .contact-info {
+  margin-bottom: 20px;
+}
+.container .email,
+.container .phone {
+  color: #999;
+  font-weight: 300;
+}
+.container .separator {
+  height: 10px;
+  border-left: 2px solid #999;
+  margin: 0px 10px;
+}
+.container .position {
+  font-weight: bold;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+.container .details {
+  line-height: 20px;
+}
+.container .section {
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+.container .section:last-of-type {
+  margin-bottom: 0px;
+}
+.container .section__title {
+  letter-spacing: 2px;
+  color: #ff0550;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.container .section__list-item {
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+.container .section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+.container .left,
+.container .right {
+  vertical-align: top;
+  display: inline-block;
+}
+.container .left {
+  width: 60%;
+}
+.container .right {
+  text-align: right;
+  width: 39%;
+}
+.container .name {
+  font-weight: bold;
+}
+.container a {
+  text-decoration: none;
+  color: #000;
+  font-style: italic;
+}
+.container a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+.container .skills__item {
+  margin-bottom: 10px;
+}

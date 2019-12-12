@@ -53,7 +53,200 @@ table {
     box-sizing: border-box;
 }
 
+
 html, body {
-    height: 100%;
+	min-height: 100%;  
+	background: #eee;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #222;
+	font-size: 14px;
+	line-height: 26px;
+	padding-bottom: 50px;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
+ 
+// My Variables
+@skybluecolor: #54AFE4;
+@lightgrey: #999;
+@navcolor: #ff0550;
+@Raleway: 'Raleway';
+@Roboto: 'Robot';
+// My Mixins
+
+.flexsection {
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+	
 }
+
+.marginsec {
+	margin-bottom: 40px;
+	padding-top: 10px;
+}
+
+.flex-column {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+.container {
+  max-width: 800px;   
+  background: #fff;
+  margin: 0px auto 0px; 
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;  
+  padding: 40px;
+  margin-top: 50px;
+
+  @media(max-width: 500px){
+	  .container {
+		  max-width: 100%;
+		  text-align: center;
+		}
+
+		.section {
+			width: 100%;
+			text-align: center;
+		}
+		.section .section__list-item .right{
+			.flexsection();
+		}
+  	}	
+	
+  
+
+	.header {
+  	margin-bottom: 30px;
+	}
+
+	nav {
+		width: 100%;
+		margin-bottom: 20px;
+		background: @navcolor;
+		text-align: center;
+		padding: 10px;
+		font-family: @Raleway;
+	}
+
+	nav a {
+		padding-left: 40px;
+		
+		
+	}
+
+  .f-name {
+    font-size: 40px;
+    text-transform: uppercase;
+	margin-bottom: 5px; 
+	color: @skybluecolor;
+  }
+  
+  .first-name {
+    font-weight: 700;
+  }
+  
+  .last-name {
+    font-weight: 300;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .email ,
+  .phone {
+    color: @lightgrey;
+    font-weight: 300;
+  } 
+  
+  .separator {
+    height: 10px;
+    border-left: 2px solid @lightgrey;
+    margin: 0px 10px;
+  }
+  
+  .position {
+    font-weight: bold;
+    .flexsection();
+    margin-right: 10px;
+    text-decoration: underline;
+	}
+	  
+	.details {
+  line-height: 20px;
+	}
+  .section {
+    .marginsec(); 
+  }
+  
+  .section:last-of-type {
+    margin-bottom: 0px;  
+  }
+  
+  .section__title {
+    letter-spacing: 2px;
+    color: @navcolor;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .section__list-item {
+    .marginsec();
+  }
+  
+  .section__list-item:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .left ,
+  .right {
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+  .left {
+    width: 60%;    
+  }
+  
+  .right {
+    text-align: right;
+    width: 39%;    
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+ 
+    
+  .skills__item {
+    margin-bottom: 10px;  
+  }
+  
+}
+
+
+
+
+
+
+
+
+
 
